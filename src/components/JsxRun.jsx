@@ -10,7 +10,7 @@ import "ace-builds/src-noconflict/ext-language_tools";
 function JsxRun() {
     const [code, setCode] = useState(
         `
-        <h1 class='bg-blue-600 p-6 text-white'>Hi There code for fun</h1>
+          <h1 style="background-color: #3b82f6; padding: 1.5rem; color: white;">Hi There code for fun</h1>
         `
     );
     // editor.resize()
