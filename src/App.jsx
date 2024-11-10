@@ -1,3 +1,4 @@
+import JavaScriptRun from "./components/JavaScriptRun"
 import JsxRun from "./components/JsxRun"
 import { useState } from "react"
 function App() {
@@ -10,7 +11,7 @@ function App() {
 
     <div className=" flex text-center  gap-9 text-white uppercase text-3xl cursor-pointer  ">
       <h1 className="hover:text-slate-400" onClick={   ()=> setEditor(`html`)} >jsx run</h1>
-      <h1 className="hover:text-slate-400" onClick={   ()=> setEditor(`html`)} >jsx run</h1>
+      <h1 className="hover:text-slate-400" onClick={   ()=> setEditor(`js`)} >JavaScript</h1>
       <h1 className="hover:text-slate-400" onClick={   ()=> setEditor(`html`)} >jsx run</h1>
 
     </div>
@@ -20,6 +21,11 @@ function App() {
     <div>
 {
   editor === `html` && <JsxRun />
+
+
+}
+{
+    editor === `js` && <JavaScriptRun />
 }
     {/* <JsxRun/> */}
     </div>
